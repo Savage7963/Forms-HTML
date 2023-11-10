@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!-- html is all about sementics -->
+</head>
+
+<body>
+
+    <header>
+        <h1>DEMO FORM</h1>
+    </header>
+    <main>
+        <form action="/" method="GET" >
+
+            <section>
+                <h2>your personal details</h2>
+                <ul>
+                    <li>
+                        <label for="username">Enter Your name</label>
+                        <!-- name only matters for the form submition -->
+                        <!-- id need to connect the label -->
+                        <input type="text" name="user-name" 
+                        placeholder="Max Schwartz"
+                        id="username" required>
+                    </li>
+
+                    <li>
+                        <strong><label for="user-email">Enter your email</label></strong>
+
+                        <input type="email" name="user--email"
+                        placeholder="Your email" id="user-email" required>
+
+
+                    </li>
+
+                    <li>
+
+                        <strong><label for="user-pass">Enter your passowrd</label></strong>
+
+                        <input type="password" name="user--pass" id="user-pass" required minlength="7">
+
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>more details</h2>
+                <ul>
+                    <li>
+                        <strong> <label for="user-age">Enter your age</label></strong>
+                        <input type="number" name="us er--age" id="user-age" required min="18" max="100"/>
+
+                    </li>
+
+                    <li>
+
+                        <strong><label for="user-bday">Enter your birthday</label></strong>
+                        <input type="date" name="user--bday" id="user-bday" required min="1921-01-01" max="2023-01-01">
+
+                    </li>
+
+                    <li>
+
+                        <label for="favourite-color"> Your favourite color</label>
+                        <select name="user-fav-color" id="favourite-color">
+                            <option value="Blue">My favourite color is Blue </option>
+                            <option value="Black">My favourite color is Black</option>
+                            <option value="Red">My favourite color is Red</option>
+
+                        </select>
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section>
+
+                <label for="user--message">Enter your message</label>
+                <!-- theres no explaination why the txtarea isnt a null element just you need to remember it -->
+
+                <textarea name="user-message" id="user--message" cols="30" rows="10"></textarea>
+
+            </section>
+
+            <section>
+                <h2>How should we verify your account</h2>
+                <!-- name can be used to group multiple inputs together that is something which we use when we are working with radiobutton -->
+
+                <ul> 
+<!-- hi now let is start  dont shake boom boom bhaaam bhaaam chintu rift now thats amazing mg-->
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" 
+                        required
+                        id="verify-text-message" value="text" />
+                        <label for="verify-text-message">Via text message(SMS)</label>
+                    </li>
+
+
+
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id="verify-call" value="phone" />
+                        <label for="verify-call">Via phone call</label>
+                    </li>
+
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id="verify--email" value="mail" />
+                        <label for="verify-email">Via an email</label>
+                    </li>
+                    <hr>
+
+
+                    <li class="form-control-inline">
+                        <input type="checkbox" name="terms" id="contact-email" value="email">
+                        <label for="contact-email"> Contact via email</label>
+                    </li>
+
+
+                    <li class="form-control-inline">
+                        <input type="checkbox" name="terms" id="contact-phone" value="phone">
+                        <label for="contact-phone"> Contact via phone</label>
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+            <section>
+                <div class="form-control-inline">
+                    <input type="checkbox" id="agree-terms" name="terms">
+                    <label for="agree-terms"> Agree to terms? </label>
+                </div>
+            </section>
+
+
+
+
+
+            <section class="btn">
+                <button type="reset">Reset</button>
+                
+                <button type="submit">submit</button>
+            </section>
+
+    </main>
+
+    </form>
+</body>
+
+</html>

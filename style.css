@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(27, 25, 25);
+    font-family: fantasy;
+   
+
+}
+
+h1{
+    text-align: center;
+    color: wheat;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+input,
+textarea,
+select{
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    /* you can do it if you want to add the same typography in the whole page 
+    
+    now i want apply some more styles to the css 
+    */
+    border: 2px solid grey;
+    padding: 0.25rem;
+    color: rgb(61, 58, 58);
+}
+
+button{
+    display: block;
+    /* padding: 0.5rem; */
+    background-color: rgb(76, 44, 95);
+    /* border-radius: 1rem;*/
+    color: aliceblue;
+
+    border: 1px solid purple;
+    padding: 0.5rem 1.5rem ;
+    border-radius: 4px;
+
+    cursor: pointer;
+    /* inherit you say the style which you would inherit should actually have a higher specificity  then the browser default styles so we override the browser default styles for this font CSS  property herer with the inherited styles so the default style applied by our own stylesheet and if i set this we also get this different font family and this different font size we never do set font size in css but default in general is 1rem  */
+
+    font:inherit ;
+}
+
+button:hover{
+    background-color: rgb(71, 12, 71);
+    border-color: blueviolet;
+}
+
+form{
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: azure;
+    border-radius: 11px;
+    padding: 1rem;
+    box-shadow: 12px 12px 10px 10px rgb(47, 141, 128);
+}
+/* sudo selector  */
+input:focus,
+textarea:focus
+{
+    background-color: rgb(219,190,253);
+    color: purple;
+    border-color: plum;
+}
+textarea{
+    resize: none;
+    /* vertical
+    horizontal */
+}
+label{
+ /* label is a inline element */
+    display: block;
+    margin-bottom:0.5rem ;
+}
+
+.form-control-inline{
+   display:flex;
+}
+.form-control-inline input{
+    width: auto;
+    margin-right: 0.5rem;
+    
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
